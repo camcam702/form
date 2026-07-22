@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>form</title>
+<style>
+	h1
+	{
+		text-align: center;
+		font-weight: normal;
+	}
+	form
+	{
+		margin: 20px  auto;
+		background: #D4D4D4;
+		border: 1px solid black;
+		border-radius: 6px;
+		min-height: 600px;
+		width: 600px;
+		padding: 20px;
+	}
+	input[type="text"]
+	{
+		align-items: center;
+		width: 95%;
+		font: 14pt/1.4em normal;
+		margin-top: 6px;
+	}
+	input[type="submit"]
+	{
+		width: 100px;
+		height: 40px;
+		background: red;
+		margin: 6px auto;
+		display: block;
+		border-radius: 6px;
+		border: 2px solid black;
+		font: 15pt auto;
+	}
+</style>
+</head>
+
+<body>
+<form action="#" method="post">
+	<h1> Contact Me </h1>
+	
+	<fieldset>
+	<input type="text" /><br/>
+	<label> First name </label><br/>
+	<input type="text"><br/>
+	<label> Last name </label><br/>
+	</fieldset>
+	<fieldset>
+	<legend>
+	Reason for contacting
+	</legend>
+	<input type="radio" name="service">
+	<label> Design Service</label><br/>
+	<input type="radio" name="service">
+	<label> Design Consulting</label><br/>
+		<input type="radio" name="service">
+	<label> UI/UX Design&nbsp;</label><br/>
+		<input type="radio" name="service">
+	<label> Other</label><br/>
+	</fieldset>
+	<fieldset>
+	<legend>
+	Operating System
+	</legend>
+	<input type="checkbox">
+		<label> Mac OS</label><br/>
+	<input type="checkbox">
+		<label> Windows</label><br/>
+	<input type="checkbox">
+		<label> Linex</label><br/>
+	<input type="checkbox">
+		<label> Other</label><br/>
+	</fieldset>
+	<fieldset>
+		<legend>Time Frame</legend>
+	<select>
+		<option>This Week </option>
+		<option> This Month</option>
+		<option> This Quater</option>
+		<option> Not Sure </option>
+	</select>
+	</fieldset>
+	<fieldset>
+	<label> Message</label> <br/>
+	<textarea rows="5" cols="70">
+	
+	</textarea>
+	</fieldset>
+	<input type="submit" />
+</form>
+</html>
